@@ -1,0 +1,1155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carpets Southend | Southend Flooring | Local Carpet Company</title>
+    <meta
+      name="description"
+      content="Southend Flooring offers high-quality carpets, expert fitting, and free home visits across Southend-on-Sea. Explore affordable luxury carpets and book your free quote today."
+    />
+    <meta
+      name="keywords"
+      content="Carpets Southend, carpet fitting Southend, affordable carpets Southend, luxury carpets Southend"
+    />
+    <link
+      rel="canonical"
+      href="https://www.southendflooring.co.uk/carpets.html"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+      :root {
+        --primary: #33c0ef;
+        --secondary: #dc0d17;
+        --secondary-strong: #df2831;
+        --text: #111111;
+        --muted: #5f6773;
+        --light: #f8f8f8;
+        --white: #ffffff;
+        --shadow: 0 18px 40px rgba(17, 17, 17, 0.12);
+        --radius: 20px;
+        --container: 1200px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, sans-serif;
+        color: var(--muted);
+        background: var(--white);
+        line-height: 1.6;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin: 0 0 0.75rem;
+        color: var(--text);
+        font-family: Roboto, Inter, sans-serif;
+      }
+      p,
+      ul {
+        margin: 0 0 1rem;
+      }
+
+      .container {
+        width: min(var(--container), calc(100% - 2rem));
+        margin: 0 auto;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.65rem;
+        padding: 0.95rem 1.35rem;
+        border: 0;
+        border-radius: 999px;
+        font-weight: 700;
+        transition:
+          transform 0.25s ease,
+          background 0.25s ease,
+          color 0.25s ease,
+          box-shadow 0.25s ease;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+      .btn-primary {
+        background: var(--primary);
+        color: #03131a;
+        box-shadow: 0 12px 24px rgba(51, 192, 239, 0.25);
+      }
+      .btn-primary:hover {
+        background: #25b4e4;
+      }
+
+      .btn-secondary {
+        background: var(--secondary-strong);
+        color: var(--white);
+        box-shadow: 0 12px 24px rgba(223, 40, 49, 0.25);
+      }
+      .btn-secondary:hover {
+        background: #c61e26;
+      }
+
+      .section {
+        padding: 5rem 0;
+      }
+      .section-sm {
+        padding: 3rem 0;
+      }
+
+      .section-heading {
+        text-align: center;
+        max-width: 760px;
+        margin: 0 auto 2.5rem;
+      }
+
+      .section-heading h2 {
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.1;
+      }
+
+      .site-header {
+        position: fixed;
+        inset: 0 0 auto 0;
+        z-index: 50;
+        transition:
+          background 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      .site-header.scrolled {
+        background: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 12px 30px rgba(17, 17, 17, 0.08);
+      }
+
+      .nav-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem 0;
+      }
+
+      .brand img {
+        width: 190px;
+        height: auto;
+        object-fit: contain;
+      }
+
+      .nav-toggle {
+        display: none;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        color: var(--white);
+        border-radius: 12px;
+        width: 48px;
+        height: 48px;
+        font-size: 1.1rem;
+      }
+
+      .site-header.scrolled .nav-toggle {
+        color: var(--text);
+        border-color: rgba(17, 17, 17, 0.12);
+      }
+
+      .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      .nav-links a {
+        color: var(--white);
+        font-weight: 500;
+        position: relative;
+      }
+
+      .site-header.scrolled .nav-links a {
+        color: var(--text);
+      }
+
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -0.35rem;
+        width: 100%;
+        height: 2px;
+        background: var(--primary);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.25s ease;
+      }
+
+      .nav-links a:hover::after,
+      .nav-links a.active::after {
+        transform: scaleX(1);
+      }
+
+      .page-hero {
+        position: relative;
+        min-height: 440px;
+        display: flex;
+        align-items: center;
+        color: var(--white);
+        background:
+          linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)),
+          url("https://www.southendflooring.co.uk/img/carousel-carpets.jpg")
+            center/cover no-repeat;
+      }
+
+      .page-hero-inner {
+        width: 100%;
+        padding: 9rem 0 4rem;
+        text-align: center;
+      }
+
+      .page-hero h1 {
+        color: var(--white);
+        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        line-height: 1;
+        text-transform: uppercase;
+      }
+
+      .page-hero p {
+        max-width: 760px;
+        margin: 1rem auto 0;
+        color: rgba(255, 255, 255, 0.92);
+        font-size: 1.08rem;
+      }
+
+      .quick-cta {
+        margin-top: -2.25rem;
+        position: relative;
+        z-index: 3;
+      }
+
+      .quick-cta-grid {
+        background: var(--white);
+        border-radius: 24px;
+        box-shadow: var(--shadow);
+        padding: 1.5rem;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 1fr;
+        gap: 1rem;
+        align-items: stretch;
+      }
+
+      .quick-cta-card {
+        background: var(--light);
+        border-radius: 18px;
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.75rem;
+        text-align: center;
+      }
+
+      .quick-cta-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .quick-cta-card .icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(51, 192, 239, 0.14);
+        color: var(--primary);
+        margin: 0 auto;
+        font-size: 1.25rem;
+      }
+
+      .content-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .content-grid.reverse {
+        grid-template-columns: 0.85fr 1.15fr;
+      }
+
+      .content-block h2 {
+        font-size: clamp(2rem, 3vw, 3rem);
+        line-height: 1.05;
+      }
+
+      .content-card-image {
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        background: var(--light);
+      }
+
+      .content-card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        min-height: 380px;
+      }
+
+      .mini-cta-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .mini-cta {
+        background: var(--light);
+        border-radius: 20px;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 10px 24px rgba(17, 17, 17, 0.06);
+      }
+
+      .mini-cta img {
+        width: 180px;
+        margin: 1rem auto 0;
+      }
+
+      .benefits-wrap {
+        background: linear-gradient(180deg, #ffffff 0%, #f7fbfd 100%);
+      }
+
+      .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .benefit-item {
+        background: var(--white);
+        border-radius: 18px;
+        padding: 1.25rem;
+        box-shadow: 0 10px 24px rgba(17, 17, 17, 0.06);
+        display: flex;
+        gap: 0.9rem;
+        align-items: flex-start;
+      }
+
+      .benefit-item i {
+        color: var(--primary);
+        margin-top: 0.2rem;
+        font-size: 1.1rem;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .gallery-item {
+        border-radius: 18px;
+        overflow: hidden;
+        background: var(--light);
+        box-shadow: 0 10px 24px rgba(17, 17, 17, 0.06);
+        cursor: pointer;
+        border: 0;
+        padding: 0;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        transition: transform 0.35s ease;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.05);
+      }
+
+      .final-cta {
+        background: linear-gradient(135deg, var(--primary), #2aaeda);
+        color: #02141c;
+        border-radius: 28px;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+      }
+
+      .final-cta h3 {
+        margin: 0 0 0.5rem;
+        font-size: clamp(1.6rem, 3vw, 2.25rem);
+      }
+
+      .site-footer {
+        background: var(--secondary);
+        color: rgba(255, 255, 255, 0.88);
+        padding-top: 4rem;
+      }
+
+      .footer-grid {
+        display: grid;
+        place-items: center;
+        text-align: center;
+        gap: 1rem;
+        padding-bottom: 2rem;
+      }
+
+      .footer-cta-image {
+        width: 220px;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.08);
+        padding: 0.75rem;
+      }
+
+      .footer-socials {
+        display: flex;
+        gap: 0.75rem;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+
+      .footer-socials a {
+        width: 46px;
+        height: 46px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        background: var(--primary);
+        color: #02141c;
+        transition: transform 0.25s ease;
+      }
+
+      .footer-socials a:hover {
+        transform: translateY(-2px);
+      }
+
+      .copyright {
+        text-align: center;
+        background: var(--primary);
+        color: #04202b;
+        padding: 1rem 0;
+        font-weight: 600;
+      }
+
+      .whatsapp-float {
+        position: fixed;
+        right: 1.25rem;
+        bottom: 1.25rem;
+        width: 66px;
+        height: 66px;
+        border-radius: 999px;
+        background: #42db87;
+        color: var(--white);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.75rem;
+        box-shadow: 0 0 0 0 rgba(66, 219, 135, 0.6);
+        z-index: 60;
+        animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+      }
+
+      .lightbox {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.85);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        z-index: 100;
+      }
+
+      .lightbox.open {
+        display: flex;
+      }
+
+      .lightbox-inner {
+        max-width: min(92vw, 1100px);
+        max-height: 88vh;
+        position: relative;
+      }
+
+      .lightbox img {
+        max-width: 100%;
+        max-height: 88vh;
+        border-radius: 18px;
+        display: block;
+      }
+
+      .lightbox-close,
+      .lightbox-prev,
+      .lightbox-next {
+        position: absolute;
+        border: 0;
+        width: 48px;
+        height: 48px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.14);
+        color: var(--white);
+        font-size: 1.1rem;
+        cursor: pointer;
+        backdrop-filter: blur(8px);
+      }
+
+      .lightbox-close {
+        top: -0.75rem;
+        right: -0.75rem;
+      }
+      .lightbox-prev {
+        top: 50%;
+        left: -4rem;
+        transform: translateY(-50%);
+      }
+      .lightbox-next {
+        top: 50%;
+        right: -4rem;
+        transform: translateY(-50%);
+      }
+
+      @keyframes pulse {
+        to {
+          box-shadow: 0 0 0 24px rgba(66, 219, 135, 0);
+        }
+      }
+
+      @media (max-width: 991px) {
+        .nav-toggle {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .nav-menu {
+          position: absolute;
+          top: calc(100% + 0.5rem);
+          left: 1rem;
+          right: 1rem;
+          background: rgba(255, 255, 255, 0.98);
+          border-radius: 20px;
+          padding: 1rem;
+          box-shadow: var(--shadow);
+          display: none;
+          flex-direction: column;
+          align-items: stretch;
+        }
+        .nav-menu.open {
+          display: flex;
+        }
+        .nav-links {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+        }
+        .nav-links a,
+        .site-header.scrolled .nav-links a {
+          color: var(--text);
+        }
+        .quick-cta-grid,
+        .content-grid,
+        .content-grid.reverse,
+        .benefits-grid,
+        .gallery-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .final-cta {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .lightbox-prev {
+          left: 0.5rem;
+        }
+        .lightbox-next {
+          right: 0.5rem;
+        }
+      }
+
+      @media (max-width: 680px) {
+        .brand img {
+          width: 160px;
+        }
+        .page-hero-inner {
+          padding-top: 7rem;
+        }
+        .quick-cta-grid,
+        .content-grid,
+        .content-grid.reverse,
+        .mini-cta-row,
+        .benefits-grid,
+        .gallery-grid {
+          grid-template-columns: 1fr;
+        }
+        .content-card-image img {
+          min-height: 280px;
+        }
+        .lightbox {
+          padding: 1rem;
+        }
+        .lightbox-close {
+          top: 0.5rem;
+          right: 0.5rem;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Southend Flooring",
+        "url": "https://www.southendflooring.co.uk/carpets.html",
+        "telephone": "07730 034850",
+        "email": "sales@southendflooring.co.uk",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "10 Westcliff Avenue",
+          "addressLocality": "Westcliff-on-Sea",
+          "postalCode": "SS0 7QR",
+          "addressRegion": "Essex",
+          "addressCountry": "GB"
+        },
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61581000873423",
+          "https://www.instagram.com/southendflooringltd/"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Southend Flooring home">
+          <img
+            src="https://www.southendflooring.co.uk/img/logo.png"
+            alt="Southend Flooring"
+          />
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="nav-menu" id="navMenu">
+          <nav class="nav-links" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="carpets.html" class="active">Carpets</a>
+            <a href="vinyl.html">Vinyl</a>
+            <a href="amtico-southend/index.html">Amtico Flooring</a>
+            <a href="laminate.html">Laminate</a>
+            <a href="gallery.html">Gallery</a>
+          </nav>
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero" aria-label="Carpets hero">
+        <div class="container page-hero-inner">
+          <h1>Carpets</h1>
+          <p>
+            High-quality carpet supply and fitting across Southend-on-Sea, with
+            free home visits, expert advice, and no-pressure quoting.
+          </p>
+        </div>
+      </section>
+
+      <section class="quick-cta">
+        <div class="container">
+          <div class="quick-cta-grid">
+            <div class="quick-cta-card">
+              <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <h3>Book a Free Home Visit</h3>
+              <p>
+                Arrange a mobile showroom visit and get samples brought to your
+                home.
+              </p>
+              <a href="https://wa.me/447730034850" class="btn btn-secondary"
+                >Book on WhatsApp</a
+              >
+            </div>
+            <div class="quick-cta-card">
+              <div class="icon"><i class="fa-solid fa-phone"></i></div>
+              <h3>Call Us</h3>
+              <p>
+                Speak directly with the team for advice, pricing, and
+                availability.
+              </p>
+              <a href="tel:07730034850" class="btn btn-primary">07730 034850</a>
+            </div>
+            <div class="quick-cta-card">
+              <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+              <h3>Get a Quote</h3>
+              <p>
+                Send an enquiry and we’ll get back to you with the next steps.
+              </p>
+              <a href="contact.html" class="btn btn-primary">Contact Form</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container content-grid">
+          <div class="content-block">
+            <h2>Southend’s expert carpet fitters</h2>
+            <p>
+              Whether you need a fresh update or a full high-end refurbishment,
+              Southend Flooring can bring the right options directly to you with
+              our free mobile showroom visit.
+            </p>
+            <p>
+              We’ll measure your space, show you a range of samples, and then
+              send a full quote over by email for you to review in your own
+              time. No pressure. No hard sale. Just a straightforward service
+              built around what works for you.
+            </p>
+            <p>
+              All current product ranges are available to view, making it easier
+              to match your flooring to your existing interior style and budget.
+            </p>
+
+            <div class="mini-cta-row">
+              <div class="mini-cta">
+                <h3>Arrange a Home Measurement</h3>
+                <p>Free visit from the mobile showroom.</p>
+                <a href="https://wa.me/447730034850">
+                  <img
+                    src="https://www.southendflooring.co.uk/img/book.png"
+                    alt="Book mobile carpet showroom"
+                  />
+                </a>
+              </div>
+              <div class="mini-cta">
+                <h3>Or Call Us</h3>
+                <p><a href="tel:07730034850">07730 034850</a></p>
+                <p>We’ll happily talk through your project and next steps.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-card-image">
+            <img
+              src="https://www.southendflooring.co.uk/img/carpet1.jpg"
+              alt="Luxury affordable carpet Southend"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-sm">
+        <div class="container content-grid reverse">
+          <div class="content-card-image">
+            <img
+              src="https://www.southendflooring.co.uk/img/carpet2.jpg"
+              alt="Affordable luxury carpets in Southend"
+            />
+          </div>
+
+          <div class="content-block">
+            <h2>Affordable luxury carpets</h2>
+            <p>
+              Fitting a new carpet is one of the simplest ways to completely
+              refresh a room. Whether you want something practical and neutral
+              or a bold statement finish, the right carpet can instantly change
+              the look and feel of a space.
+            </p>
+            <p>
+              At Southend Flooring, we stock a large range of samples from
+              leading carpet manufacturers and offer a complete measuring and
+              fitting service, helping ensure your carpet is installed properly
+              and built to last.
+            </p>
+            <a href="https://wa.me/447730034850" class="btn btn-secondary"
+              >Book a Free Visit</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section benefits-wrap">
+        <div class="container content-grid">
+          <div class="content-block">
+            <h2>Benefits of carpet</h2>
+            <p>
+              There’s more to carpet than just appearance. When fitted well and
+              maintained properly, carpets are an excellent option for comfort,
+              insulation, sound control, and safety in both homes and commercial
+              spaces.
+            </p>
+
+            <div class="benefits-grid">
+              <div class="benefit-item">
+                <i class="fa-solid fa-check"></i>
+                <div>
+                  <strong>Improved insulation</strong><br />Carpet fibres retain
+                  warmth longer and help rooms feel more comfortable.
+                </div>
+              </div>
+              <div class="benefit-item">
+                <i class="fa-solid fa-check"></i>
+                <div>
+                  <strong>Better comfort</strong><br />Luxury carpets add
+                  softness and warmth underfoot.
+                </div>
+              </div>
+              <div class="benefit-item">
+                <i class="fa-solid fa-check"></i>
+                <div>
+                  <strong>Noise reduction</strong><br />Carpet absorbs sound
+                  better than hard flooring surfaces.
+                </div>
+              </div>
+              <div class="benefit-item">
+                <i class="fa-solid fa-check"></i>
+                <div>
+                  <strong>Easy upkeep</strong><br />Simple regular vacuuming and
+                  quick action on spills keeps carpets looking better for
+                  longer.
+                </div>
+              </div>
+              <div class="benefit-item">
+                <i class="fa-solid fa-check"></i>
+                <div>
+                  <strong>Added safety</strong><br />Provides a naturally softer
+                  and more slip-resistant surface.
+                </div>
+              </div>
+              <div class="benefit-item">
+                <i class="fa-solid fa-check"></i>
+                <div>
+                  <strong>Flexible style</strong><br />Works across bedrooms,
+                  lounges, stairs, offices, and more.
+                </div>
+              </div>
+            </div>
+
+            <div class="mini-cta-row">
+              <div class="mini-cta">
+                <h3>Free Mobile Showroom Visit</h3>
+                <p>See samples in your own space.</p>
+                <a href="https://wa.me/447730034850">
+                  <img
+                    src="https://www.southendflooring.co.uk/img/book.png"
+                    alt="Book mobile carpet showroom"
+                  />
+                </a>
+              </div>
+              <div class="mini-cta">
+                <h3>Prefer to Call?</h3>
+                <p><a href="tel:07730034850">07730 034850</a></p>
+                <p>Fast advice and easy booking.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-card-image">
+            <img
+              src="https://www.southendflooring.co.uk/img/carpet3.jpg"
+              alt="Carpet fitting in Southend"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Recent carpet work</h2>
+            <p>
+              A small selection of carpet installations and finishes from past
+              projects.
+            </p>
+          </div>
+
+          <div class="gallery-grid" id="galleryGrid">
+            <button class="gallery-item" type="button">
+              <img
+                src="https://www.southendflooring.co.uk/img/gallery/carpets/1.jpg"
+                alt="Carpets Southend project 1"
+              />
+            </button>
+            <button class="gallery-item" type="button">
+              <img
+                src="https://www.southendflooring.co.uk/img/gallery/carpets/2.jpg"
+                alt="Carpets Southend project 2"
+              />
+            </button>
+            <button class="gallery-item" type="button">
+              <img
+                src="https://www.southendflooring.co.uk/img/gallery/carpets/3.jpg"
+                alt="Carpets Southend project 3"
+              />
+            </button>
+            <button class="gallery-item" type="button">
+              <img
+                src="https://www.southendflooring.co.uk/img/gallery/carpets/4.jpg"
+                alt="Carpets Southend project 4"
+              />
+            </button>
+            <button class="gallery-item" type="button">
+              <img
+                src="https://www.southendflooring.co.uk/img/gallery/carpets/5.jpg"
+                alt="Carpets Southend project 5"
+              />
+            </button>
+            <button class="gallery-item" type="button">
+              <img
+                src="https://www.southendflooring.co.uk/img/gallery/carpets/6.jpg"
+                alt="Carpets Southend project 6"
+              />
+            </button>
+            <button class="gallery-item" type="button">
+              <img
+                src="https://www.southendflooring.co.uk/img/gallery/carpets/7.jpg"
+                alt="Carpets Southend project 7"
+              />
+            </button>
+            <button class="gallery-item" type="button">
+              <img
+                src="https://www.southendflooring.co.uk/img/gallery/carpets/8.jpg"
+                alt="Carpets Southend project 8"
+              />
+            </button>
+            <button class="gallery-item" type="button">
+              <img
+                src="https://www.southendflooring.co.uk/img/gallery/carpets/9.jpg"
+                alt="Carpets Southend project 9"
+              />
+            </button>
+            <button class="gallery-item" type="button">
+              <img
+                src="https://www.southendflooring.co.uk/img/gallery/carpets/10.jpg"
+                alt="Carpets Southend project 10"
+              />
+            </button>
+            <button class="gallery-item" type="button">
+              <img
+                src="https://www.southendflooring.co.uk/img/gallery/carpets/11.jpg"
+                alt="Carpets Southend project 11"
+              />
+            </button>
+            <button class="gallery-item" type="button">
+              <img
+                src="https://www.southendflooring.co.uk/img/gallery/carpets/12.jpg"
+                alt="Carpets Southend project 12"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-sm">
+        <div class="container">
+          <div class="final-cta">
+            <div>
+              <h3>Ready to choose your new carpet?</h3>
+              <p>
+                Book a free home visit, view samples in person, and get a quote
+                without any pressure.
+              </p>
+            </div>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap">
+              <a href="https://wa.me/447730034850" class="btn btn-secondary"
+                >WhatsApp Us</a
+              >
+              <a href="tel:07730034850" class="btn btn-primary"
+                >Call 07730 034850</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <h3 style="color: #fff; margin-bottom: 0">Contact Info</h3>
+        <a href="https://wa.me/447730034850">
+          <img
+            class="footer-cta-image"
+            src="https://www.southendflooring.co.uk/img/whatsapp.png"
+            alt="Book mobile carpet showroom"
+          />
+        </a>
+        <p>
+          <i class="fa-solid fa-phone" style="color: var(--primary)"></i>
+          <a href="tel:07730034850">07730 034850</a>
+        </p>
+        <p>
+          <i class="fa-solid fa-envelope" style="color: var(--primary)"></i>
+          <a href="mailto:sales@southendflooring.co.uk"
+            >sales@southendflooring.co.uk</a
+          >
+        </p>
+
+        <div class="footer-socials">
+          <a
+            href="https://www.facebook.com/profile.php?id=61581000873423"
+            aria-label="Facebook"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/southendflooringltd/"
+            aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="copyright">2026. Southend Flooring, All rights reserved.</div>
+    </footer>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/447730034850"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <div class="lightbox-inner">
+        <button
+          class="lightbox-close"
+          id="lightboxClose"
+          aria-label="Close image"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button
+          class="lightbox-prev"
+          id="lightboxPrev"
+          aria-label="Previous image"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <img id="lightboxImage" src="" alt="" />
+        <button class="lightbox-next" id="lightboxNext" aria-label="Next image">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      const header = document.getElementById("siteHeader");
+      const navToggle = document.getElementById("navToggle");
+      const navMenu = document.getElementById("navMenu");
+
+      const setHeaderState = () => {
+        if (window.scrollY > 45) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      };
+
+      setHeaderState();
+      window.addEventListener("scroll", setHeaderState);
+
+      navToggle.addEventListener("click", () => {
+        const open = navMenu.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+
+      const galleryButtons = Array.from(
+        document.querySelectorAll("#galleryGrid .gallery-item"),
+      );
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImage = document.getElementById("lightboxImage");
+      const lightboxClose = document.getElementById("lightboxClose");
+      const lightboxPrev = document.getElementById("lightboxPrev");
+      const lightboxNext = document.getElementById("lightboxNext");
+      let currentImageIndex = 0;
+
+      function openLightbox(index) {
+        currentImageIndex = index;
+        const img = galleryButtons[currentImageIndex].querySelector("img");
+        lightboxImage.src = img.src;
+        lightboxImage.alt = img.alt;
+        lightbox.classList.add("open");
+        lightbox.setAttribute("aria-hidden", "false");
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove("open");
+        lightbox.setAttribute("aria-hidden", "true");
+      }
+
+      function showImage(index) {
+        currentImageIndex =
+          (index + galleryButtons.length) % galleryButtons.length;
+        const img = galleryButtons[currentImageIndex].querySelector("img");
+        lightboxImage.src = img.src;
+        lightboxImage.alt = img.alt;
+      }
+
+      galleryButtons.forEach((button, index) => {
+        button.addEventListener("click", () => openLightbox(index));
+      });
+
+      lightboxClose.addEventListener("click", closeLightbox);
+      lightboxPrev.addEventListener("click", () =>
+        showImage(currentImageIndex - 1),
+      );
+      lightboxNext.addEventListener("click", () =>
+        showImage(currentImageIndex + 1),
+      );
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (!lightbox.classList.contains("open")) return;
+        if (e.key === "Escape") closeLightbox();
+        if (e.key === "ArrowLeft") showImage(currentImageIndex - 1);
+        if (e.key === "ArrowRight") showImage(currentImageIndex + 1);
+      });
+    </script>
+  </body>
+</html>
