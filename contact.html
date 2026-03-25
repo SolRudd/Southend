@@ -1,0 +1,909 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Contact Us | Southend Flooring | Free Quotes & Mobile Showroom
+    </title>
+    <meta
+      name="description"
+      content="Contact Southend Flooring for carpets, vinyl, laminate, and Amtico flooring across Southend-on-Sea. Book a free home visit, request a quote, or send us a message today."
+    />
+    <meta
+      name="keywords"
+      content="Contact Southend Flooring, flooring quote Southend, carpet fitting Southend, vinyl flooring Southend, laminate flooring Southend"
+    />
+    <link
+      rel="canonical"
+      href="https://www.southendflooring.co.uk/contact.html"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+      :root {
+        --primary: #33c0ef;
+        --secondary: #dc0d17;
+        --secondary-strong: #df2831;
+        --text: #111111;
+        --muted: #5f6773;
+        --light: #f8f8f8;
+        --white: #ffffff;
+        --shadow: 0 18px 40px rgba(17, 17, 17, 0.12);
+        --radius: 20px;
+        --container: 1200px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, sans-serif;
+        color: var(--muted);
+        background: var(--white);
+        line-height: 1.6;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin: 0 0 0.75rem;
+        color: var(--text);
+        font-family: Roboto, Inter, sans-serif;
+      }
+      p {
+        margin: 0 0 1rem;
+      }
+
+      .container {
+        width: min(var(--container), calc(100% - 2rem));
+        margin: 0 auto;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.65rem;
+        padding: 0.95rem 1.35rem;
+        border: 0;
+        border-radius: 999px;
+        font-weight: 700;
+        transition:
+          transform 0.25s ease,
+          background 0.25s ease,
+          color 0.25s ease,
+          box-shadow 0.25s ease;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .btn-primary {
+        background: var(--primary);
+        color: #03131a;
+        box-shadow: 0 12px 24px rgba(51, 192, 239, 0.25);
+      }
+
+      .btn-primary:hover {
+        background: #25b4e4;
+      }
+
+      .btn-secondary {
+        background: var(--secondary-strong);
+        color: var(--white);
+        box-shadow: 0 12px 24px rgba(223, 40, 49, 0.25);
+      }
+
+      .btn-secondary:hover {
+        background: #c61e26;
+      }
+
+      .section {
+        padding: 5rem 0;
+      }
+      .section-sm {
+        padding: 3rem 0;
+      }
+
+      .site-header {
+        position: fixed;
+        inset: 0 0 auto 0;
+        z-index: 50;
+        transition:
+          background 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      .site-header.scrolled {
+        background: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 12px 30px rgba(17, 17, 17, 0.08);
+      }
+
+      .nav-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem 0;
+      }
+
+      .brand img {
+        width: 190px;
+        height: auto;
+        object-fit: contain;
+      }
+
+      .nav-toggle {
+        display: none;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        color: var(--white);
+        border-radius: 12px;
+        width: 48px;
+        height: 48px;
+        font-size: 1.1rem;
+      }
+
+      .site-header.scrolled .nav-toggle {
+        color: var(--text);
+        border-color: rgba(17, 17, 17, 0.12);
+      }
+
+      .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      .nav-links a {
+        color: var(--white);
+        font-weight: 500;
+        position: relative;
+      }
+
+      .site-header.scrolled .nav-links a {
+        color: var(--text);
+      }
+
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -0.35rem;
+        width: 100%;
+        height: 2px;
+        background: var(--primary);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.25s ease;
+      }
+
+      .nav-links a:hover::after,
+      .nav-links a.active::after {
+        transform: scaleX(1);
+      }
+
+      .page-hero {
+        position: relative;
+        min-height: 420px;
+        display: flex;
+        align-items: center;
+        color: var(--white);
+        background:
+          linear-gradient(180deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+          url("https://www.southendflooring.co.uk/img/carousel-contact.webp")
+            center/cover no-repeat;
+      }
+
+      .page-hero-inner {
+        width: 100%;
+        padding: 9rem 0 4rem;
+        text-align: center;
+      }
+
+      .page-hero h1 {
+        color: var(--white);
+        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        line-height: 1;
+        text-transform: uppercase;
+      }
+
+      .page-hero p {
+        max-width: 760px;
+        margin: 1rem auto 0;
+        color: rgba(255, 255, 255, 0.92);
+        font-size: 1.08rem;
+      }
+
+      .quick-cta {
+        margin-top: -2.25rem;
+        position: relative;
+        z-index: 3;
+      }
+
+      .quick-cta-grid {
+        background: var(--white);
+        border-radius: 24px;
+        box-shadow: var(--shadow);
+        padding: 1.5rem;
+        display: grid;
+        grid-template-columns: 1.1fr 1fr 1fr;
+        gap: 1rem;
+        align-items: stretch;
+      }
+
+      .quick-cta-card {
+        background: var(--light);
+        border-radius: 18px;
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.75rem;
+        text-align: center;
+      }
+
+      .quick-cta-card .icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(51, 192, 239, 0.14);
+        color: var(--primary);
+        margin: 0 auto;
+        font-size: 1.25rem;
+      }
+
+      .contact-layout {
+        display: grid;
+        grid-template-columns: 0.92fr 1.08fr;
+        gap: 2rem;
+        align-items: start;
+      }
+
+      .card {
+        background: var(--light);
+        border-radius: 24px;
+        box-shadow: 0 12px 28px rgba(17, 17, 17, 0.08);
+        padding: 2rem;
+      }
+
+      .showroom-image {
+        border-radius: 20px;
+        overflow: hidden;
+        margin-top: 1.25rem;
+        box-shadow: var(--shadow);
+      }
+
+      .showroom-image img {
+        width: 100%;
+        min-height: 340px;
+        object-fit: cover;
+      }
+
+      .contact-info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .contact-info-item {
+        background: var(--white);
+        border-radius: 18px;
+        padding: 1.25rem;
+        box-shadow: 0 8px 20px rgba(17, 17, 17, 0.05);
+      }
+
+      .contact-info-item i {
+        font-size: 1.5rem;
+        color: var(--primary);
+        margin-bottom: 0.75rem;
+      }
+
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.45rem;
+      }
+
+      .form-group.full {
+        grid-column: 1 / -1;
+      }
+
+      label {
+        color: var(--text);
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        border: 1px solid rgba(17, 17, 17, 0.08);
+        border-radius: 16px;
+        background: var(--white);
+        padding: 0.95rem 1rem;
+        font: inherit;
+        color: var(--text);
+        transition:
+          border-color 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      input:focus,
+      textarea:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 4px rgba(51, 192, 239, 0.14);
+      }
+
+      textarea {
+        min-height: 150px;
+        resize: vertical;
+      }
+
+      .form-note {
+        font-size: 0.92rem;
+        margin-top: 0.85rem;
+      }
+
+      .form-actions {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .testimonial-wrap {
+        background: linear-gradient(180deg, #ffffff 0%, #f7fbfd 100%);
+      }
+
+      .section-heading {
+        text-align: center;
+        max-width: 760px;
+        margin: 0 auto 2.5rem;
+      }
+
+      .section-heading h2 {
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.1;
+      }
+
+      .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .testimonial-card {
+        background: var(--white);
+        border-radius: 20px;
+        padding: 1.5rem;
+        box-shadow: 0 10px 24px rgba(17, 17, 17, 0.06);
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .testimonial-card .quote {
+        color: var(--primary);
+        font-size: 1.4rem;
+      }
+
+      .stars {
+        color: var(--primary);
+        display: flex;
+        gap: 0.2rem;
+      }
+
+      .site-footer {
+        background: var(--secondary);
+        color: rgba(255, 255, 255, 0.88);
+        padding-top: 4rem;
+      }
+
+      .footer-grid {
+        display: grid;
+        place-items: center;
+        text-align: center;
+        gap: 1rem;
+        padding-bottom: 2rem;
+      }
+
+      .footer-cta-image {
+        width: 220px;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.08);
+        padding: 0.75rem;
+      }
+
+      .footer-socials {
+        display: flex;
+        gap: 0.75rem;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+
+      .footer-socials a {
+        width: 46px;
+        height: 46px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        background: var(--primary);
+        color: #02141c;
+        transition: transform 0.25s ease;
+      }
+
+      .footer-socials a:hover {
+        transform: translateY(-2px);
+      }
+
+      .copyright {
+        text-align: center;
+        background: var(--primary);
+        color: #04202b;
+        padding: 1rem 0;
+        font-weight: 600;
+      }
+
+      .whatsapp-float {
+        position: fixed;
+        right: 1.25rem;
+        bottom: 1.25rem;
+        width: 66px;
+        height: 66px;
+        border-radius: 999px;
+        background: #42db87;
+        color: var(--white);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.75rem;
+        box-shadow: 0 0 0 0 rgba(66, 219, 135, 0.6);
+        z-index: 60;
+        animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+      }
+
+      @keyframes pulse {
+        to {
+          box-shadow: 0 0 0 24px rgba(66, 219, 135, 0);
+        }
+      }
+
+      @media (max-width: 991px) {
+        .nav-toggle {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .nav-menu {
+          position: absolute;
+          top: calc(100% + 0.5rem);
+          left: 1rem;
+          right: 1rem;
+          background: rgba(255, 255, 255, 0.98);
+          border-radius: 20px;
+          padding: 1rem;
+          box-shadow: var(--shadow);
+          display: none;
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .nav-menu.open {
+          display: flex;
+        }
+        .nav-links {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+        }
+        .nav-links a,
+        .site-header.scrolled .nav-links a {
+          color: var(--text);
+        }
+
+        .quick-cta-grid,
+        .contact-layout,
+        .testimonial-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 680px) {
+        .brand img {
+          width: 160px;
+        }
+        .page-hero-inner {
+          padding-top: 7rem;
+        }
+        .contact-info-grid,
+        .form-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Southend Flooring",
+        "url": "https://www.southendflooring.co.uk/contact.html",
+        "telephone": "07730 034850",
+        "email": "sales@southendflooring.co.uk",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "10 Westcliff Avenue",
+          "addressLocality": "Westcliff-on-Sea",
+          "postalCode": "SS0 7QR",
+          "addressRegion": "Essex",
+          "addressCountry": "GB"
+        },
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61581000873423",
+          "https://www.instagram.com/southendflooringltd/"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Southend Flooring home">
+          <img
+            src="https://www.southendflooring.co.uk/img/logo.webp"
+            alt="Southend Flooring"
+          />
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="nav-menu" id="navMenu">
+          <nav class="nav-links" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="carpets.html">Carpets</a>
+            <a href="vinyl.html">Vinyl</a>
+            <a href="amtico-southend/index.html">Amtico Flooring</a>
+            <a href="laminate.html">Laminate</a>
+            <a href="gallery.html">Gallery</a>
+          </nav>
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero" aria-label="Contact hero">
+        <div class="container page-hero-inner">
+          <h1>Contact Us</h1>
+          <p>
+            Book a free home visit, request a quote, or get in touch with
+            Southend Flooring for expert advice on your next flooring project.
+          </p>
+        </div>
+      </section>
+
+      <section class="quick-cta">
+        <div class="container">
+          <div class="quick-cta-grid">
+            <div class="quick-cta-card">
+              <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <h3>Book a Free Home Visit</h3>
+              <p>
+                Arrange a mobile showroom visit and see the right options in
+                your own home.
+              </p>
+              <a href="https://wa.me/447730034850" class="btn btn-secondary"
+                >Book on WhatsApp</a
+              >
+            </div>
+            <div class="quick-cta-card">
+              <div class="icon"><i class="fa-solid fa-phone"></i></div>
+              <h3>Call Us</h3>
+              <p>
+                Speak directly with the team for advice, pricing, and
+                availability.
+              </p>
+              <a href="tel:07730034850" class="btn btn-primary">07730 034850</a>
+            </div>
+            <div class="quick-cta-card">
+              <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+              <h3>Email Us</h3>
+              <p>Prefer email? Send us a message and we’ll get back to you.</p>
+              <a
+                href="mailto:sales@southendflooring.co.uk"
+                class="btn btn-primary"
+                >sales@southendflooring.co.uk</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-layout">
+          <div class="card">
+            <h2>Mobile Showroom</h2>
+            <p>
+              To book a free home visit from our mobile showroom or arrange a
+              home measurement, simply get in touch and we’ll help you find a
+              suitable time.
+            </p>
+            <a href="https://wa.me/447730034850" class="btn btn-secondary"
+              >Book via WhatsApp</a
+            >
+
+            <div class="showroom-image">
+              <img
+                src="https://www.southendflooring.co.uk/img/mobile-carpet-showroom.webp"
+                alt="Southend Flooring mobile showroom"
+              />
+            </div>
+          </div>
+
+          <div class="card">
+            <h2>Get in touch</h2>
+
+            <div class="contact-info-grid">
+              <div class="contact-info-item">
+                <i class="fa-solid fa-phone"></i>
+                <h3>Telephone</h3>
+                <p><a href="tel:07730034850">07730 034850</a></p>
+              </div>
+              <div class="contact-info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Email</h3>
+                <p>
+                  <a href="mailto:sales@southendflooring.co.uk"
+                    >sales@southendflooring.co.uk</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <h3 style="margin-bottom: 1rem">Send a message</h3>
+
+            <!-- QUICK OPTION:
+               Replace YOUR_FORM_ENDPOINT with your Formspree endpoint
+               Example: https://formspree.io/f/xxxxabcd
+          -->
+            <form action="YOUR_FORM_ENDPOINT" method="POST">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Your Phone</label>
+                  <input type="tel" id="phone" name="phone" />
+                </div>
+
+                <div class="form-group full">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <!-- Optional spam protection -->
+                <input type="text" name="_gotcha" style="display: none" />
+
+                <!-- Optional subject for services like Formspree -->
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="New enquiry from Southend Flooring website"
+                />
+
+                <!-- Optional redirect after success -->
+                <!-- <input type="hidden" name="_next" value="https://www.southendflooring.co.uk/thank-you.html"> -->
+              </div>
+
+              <p class="form-note">
+                Your details remain confidential. Add your privacy page here:
+                <a href="privacy.html"><strong>Privacy Policy</strong></a>
+              </p>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonial-wrap">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Customer Reviews</h2>
+            <p>
+              A few kind words from clients we’ve worked with across Southend
+              and beyond.
+            </p>
+          </div>
+
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+              <p>
+                I would recommend them highly, a good bunch of people and they
+                worked tirelessly.
+              </p>
+              <div>
+                <h4>Teresa Ward</h4>
+                <p>Boreham House</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+              <p>
+                Job completed on time, within budget and to a high standard. I’d
+                be more than happy to use again and recommend to others.
+              </p>
+              <div>
+                <h4>Kean Folley</h4>
+                <p>Bank of Scotland</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+              <p>
+                Excellent service from James and Tony. They finished the job
+                early to a very high spec. Very happy customers, highly
+                recommend.
+              </p>
+              <div>
+                <h4>Darren</h4>
+                <p>Colchester</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <h3 style="color: #fff; margin-bottom: 0">Contact Info</h3>
+        <a href="https://wa.me/447730034850">
+          <img
+            class="footer-cta-image"
+            src="https://www.southendflooring.co.uk/img/whatsapp.webp"
+            alt="Book mobile carpet showroom"
+          />
+        </a>
+        <p>
+          <i class="fa-solid fa-phone" style="color: var(--primary)"></i>
+          <a href="tel:07730034850">07730 034850</a>
+        </p>
+        <p>
+          <i class="fa-solid fa-envelope" style="color: var(--primary)"></i>
+          <a href="mailto:sales@southendflooring.co.uk"
+            >sales@southendflooring.co.uk</a
+          >
+        </p>
+
+        <div class="footer-socials">
+          <a
+            href="https://www.facebook.com/profile.php?id=61581000873423"
+            aria-label="Facebook"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/southendflooringltd/"
+            aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="copyright">2026. Southend Flooring, All rights reserved.</div>
+    </footer>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/447730034850"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+      const header = document.getElementById("siteHeader");
+      const navToggle = document.getElementById("navToggle");
+      const navMenu = document.getElementById("navMenu");
+
+      const setHeaderState = () => {
+        if (window.scrollY > 45) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      };
+
+      setHeaderState();
+      window.addEventListener("scroll", setHeaderState);
+
+      navToggle.addEventListener("click", () => {
+        const open = navMenu.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    </script>
+  </body>
+</html>
