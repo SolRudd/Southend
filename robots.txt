@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /southend_flooring_homepage_rebuild.html
+
+Sitemap: https://www.southendflooring.co.uk/sitemap.xml

@@ -4,20 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Contact Us | Southend Flooring | Free Quotes & Mobile Showroom
+      Flooring Advice Blog | Southend Flooring | Carpets, Vinyl &amp; Laminate
     </title>
     <meta
       name="description"
-      content="Contact Southend Flooring for carpets, vinyl, laminate, and Amtico flooring across Southend-on-Sea. Book a free home visit, request a quote, or send us a message today."
+      content="Read Southend Flooring's blog for practical advice on carpets, laminate, and LVT. Explore flooring guides for busy homes, stairs, bedrooms, kitchens, and hallways."
     />
     <meta
       name="keywords"
-      content="Contact Southend Flooring, flooring quote Southend, carpet fitting Southend, vinyl flooring Southend, laminate flooring Southend"
+      content="Southend Flooring blog, flooring advice Southend, carpet guide, laminate guide, LVT guide, best flooring for busy homes"
     />
-    <link
-      rel="canonical"
-      href="https://www.southendflooring.co.uk/contact.html"
-    />
+    <link rel="canonical" href="https://www.southendflooring.co.uk/blog/" />
     <meta
       name="robots"
       content="index, follow, max-image-preview:large"
@@ -25,20 +22,17 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Contact Us | Southend Flooring | Free Quotes &amp; Mobile Showroom"
+      content="Flooring Advice Blog | Southend Flooring"
     />
     <meta
       property="og:description"
-      content="Contact Southend Flooring for carpets, vinyl, laminate, and Amtico flooring across Southend-on-Sea. Book a free home visit, request a quote, or send us a message today."
+      content="Useful flooring guides from Southend Flooring covering carpets, laminate, vinyl, and room-by-room advice for Southend homes."
     />
-    <meta
-      property="og:url"
-      content="https://www.southendflooring.co.uk/contact.html"
-    />
+    <meta property="og:url" content="https://www.southendflooring.co.uk/blog/" />
     <meta property="og:site_name" content="Southend Flooring" />
     <meta
       property="og:image"
-      content="https://www.southendflooring.co.uk/img/carousel-contact.webp"
+      content="https://www.southendflooring.co.uk/img/carousel-gallery.webp"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#33C0EF" />
@@ -74,9 +68,11 @@
       * {
         box-sizing: border-box;
       }
+
       html {
         scroll-behavior: smooth;
       }
+
       body {
         margin: 0;
         font-family: Inter, system-ui, sans-serif;
@@ -89,10 +85,12 @@
         max-width: 100%;
         display: block;
       }
+
       a {
         color: inherit;
         text-decoration: none;
       }
+
       h1,
       h2,
       h3,
@@ -101,6 +99,7 @@
         color: var(--text);
         font-family: Roboto, Inter, sans-serif;
       }
+
       p {
         margin: 0 0 1rem;
       }
@@ -154,8 +153,16 @@
       .section {
         padding: 5rem 0;
       }
-      .section-sm {
-        padding: 3rem 0;
+
+      .section-heading {
+        text-align: center;
+        max-width: 760px;
+        margin: 0 auto 2.5rem;
+      }
+
+      .section-heading h2 {
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.1;
       }
 
       .site-header {
@@ -245,13 +252,13 @@
 
       .page-hero {
         position: relative;
-        min-height: 420px;
+        min-height: 480px;
         display: flex;
         align-items: center;
         color: var(--white);
         background:
-          linear-gradient(180deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-          url("https://www.southendflooring.co.uk/img/carousel-contact.webp")
+          linear-gradient(180deg, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.5)),
+          url("https://www.southendflooring.co.uk/img/carousel-gallery.webp")
             center/cover no-repeat;
       }
 
@@ -261,49 +268,54 @@
         text-align: center;
       }
 
+      .eyebrow {
+        display: inline-block;
+        margin-bottom: 1rem;
+        letter-spacing: 0.18em;
+        font-size: 0.88rem;
+        text-transform: uppercase;
+        color: var(--primary);
+        font-weight: 800;
+      }
+
       .page-hero h1 {
         color: var(--white);
-        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        font-size: clamp(2.5rem, 5.8vw, 4.8rem);
         line-height: 1;
         text-transform: uppercase;
       }
 
       .page-hero p {
-        max-width: 760px;
+        max-width: 780px;
         margin: 1rem auto 0;
         color: rgba(255, 255, 255, 0.92);
         font-size: 1.08rem;
       }
 
-      .quick-cta {
+      .feature-strip {
         margin-top: -2.25rem;
         position: relative;
         z-index: 3;
       }
 
-      .quick-cta-grid {
+      .feature-grid {
         background: var(--white);
         border-radius: 24px;
         box-shadow: var(--shadow);
         padding: 1.5rem;
         display: grid;
-        grid-template-columns: 1.1fr 1fr 1fr;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1rem;
-        align-items: stretch;
       }
 
-      .quick-cta-card {
+      .feature-card {
         background: var(--light);
         border-radius: 18px;
-        padding: 1.25rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 0.75rem;
+        padding: 1.5rem;
         text-align: center;
       }
 
-      .quick-cta-card .icon {
+      .feature-card .icon {
         width: 52px;
         height: 52px;
         border-radius: 999px;
@@ -312,158 +324,102 @@
         justify-content: center;
         background: rgba(51, 192, 239, 0.14);
         color: var(--primary);
-        margin: 0 auto;
-        font-size: 1.25rem;
+        font-size: 1.2rem;
+        margin-bottom: 0.9rem;
       }
 
-      .contact-layout {
+      .article-grid {
         display: grid;
-        grid-template-columns: 0.92fr 1.08fr;
-        gap: 2rem;
-        align-items: start;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
       }
 
-      .card {
+      .article-card {
         background: var(--light);
         border-radius: 24px;
-        box-shadow: 0 12px 28px rgba(17, 17, 17, 0.08);
-        padding: 2rem;
-      }
-
-      .showroom-image {
-        border-radius: 20px;
         overflow: hidden;
-        margin-top: 1.25rem;
-        box-shadow: var(--shadow);
+        box-shadow: 0 10px 30px rgba(17, 17, 17, 0.06);
       }
 
-      .showroom-image img {
+      .article-card img {
         width: 100%;
-        min-height: 340px;
+        height: 280px;
         object-fit: cover;
       }
 
-      .contact-info-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        margin-bottom: 1.5rem;
+      .article-card-body {
+        padding: 1.6rem;
       }
 
-      .contact-info-item {
-        background: var(--white);
-        border-radius: 18px;
-        padding: 1.25rem;
-        box-shadow: 0 8px 20px rgba(17, 17, 17, 0.05);
-      }
-
-      .contact-info-item i {
-        font-size: 1.5rem;
-        color: var(--primary);
-        margin-bottom: 0.75rem;
-      }
-
-      .form-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-      }
-
-      .form-group {
-        display: flex;
-        flex-direction: column;
-        gap: 0.45rem;
-      }
-
-      .form-group.full {
-        grid-column: 1 / -1;
-      }
-
-      label {
-        color: var(--text);
-        font-weight: 600;
-        font-size: 0.95rem;
-      }
-
-      input,
-      textarea {
-        width: 100%;
-        border: 1px solid rgba(17, 17, 17, 0.08);
-        border-radius: 16px;
-        background: var(--white);
-        padding: 0.95rem 1rem;
-        font: inherit;
-        color: var(--text);
-        transition:
-          border-color 0.2s ease,
-          box-shadow 0.2s ease;
-      }
-
-      input:focus,
-      textarea:focus {
-        outline: none;
-        border-color: var(--primary);
-        box-shadow: 0 0 0 4px rgba(51, 192, 239, 0.14);
-      }
-
-      textarea {
-        min-height: 150px;
-        resize: vertical;
-      }
-
-      .form-note {
-        font-size: 0.92rem;
-        margin-top: 0.85rem;
-      }
-
-      .form-actions {
-        margin-top: 1rem;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
+      .article-kicker {
+        display: inline-flex;
         align-items: center;
+        gap: 0.45rem;
+        border-radius: 999px;
+        padding: 0.35rem 0.8rem;
+        background: rgba(51, 192, 239, 0.12);
+        color: #0a5a72;
+        font-size: 0.82rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 1rem;
       }
 
-      .testimonial-wrap {
+      .article-card h3 {
+        font-size: clamp(1.5rem, 2vw, 1.9rem);
+      }
+
+      .article-meta {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        color: var(--muted);
+        font-size: 0.92rem;
+        margin-bottom: 0.9rem;
+      }
+
+      .article-meta span {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+
+      .insight-wrap {
         background: linear-gradient(180deg, #ffffff 0%, #f7fbfd 100%);
       }
 
-      .section-heading {
-        text-align: center;
-        max-width: 760px;
-        margin: 0 auto 2.5rem;
-      }
-
-      .section-heading h2 {
-        font-size: clamp(2rem, 4vw, 3rem);
-        line-height: 1.1;
-      }
-
-      .testimonial-grid {
+      .insight-grid {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1rem;
       }
 
-      .testimonial-card {
+      .insight-card {
         background: var(--white);
         border-radius: 20px;
         padding: 1.5rem;
         box-shadow: 0 10px 24px rgba(17, 17, 17, 0.06);
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
       }
 
-      .testimonial-card .quote {
-        color: var(--primary);
-        font-size: 1.4rem;
+      .insight-card h3 {
+        font-size: 1.2rem;
       }
 
-      .stars {
-        color: var(--primary);
+      .final-cta {
+        background: linear-gradient(135deg, var(--primary), #2aaeda);
+        color: #02141c;
+        border-radius: 28px;
+        padding: 2rem;
         display: flex;
-        gap: 0.2rem;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+      }
+
+      .final-cta h3 {
+        margin: 0 0 0.5rem;
+        font-size: clamp(1.6rem, 3vw, 2.25rem);
       }
 
       .site-footer {
@@ -566,20 +522,27 @@
         .nav-menu.open {
           display: flex;
         }
+
         .nav-links {
           flex-direction: column;
           align-items: flex-start;
           gap: 1rem;
         }
+
         .nav-links a,
         .site-header.scrolled .nav-links a {
           color: var(--text);
         }
 
-        .quick-cta-grid,
-        .contact-layout,
-        .testimonial-grid {
-          grid-template-columns: 1fr;
+        .feature-grid,
+        .article-grid,
+        .insight-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .final-cta {
+          flex-direction: column;
+          align-items: flex-start;
         }
       }
 
@@ -587,34 +550,52 @@
         .brand img {
           width: 160px;
         }
+
         .page-hero-inner {
           padding-top: 7rem;
         }
-        .contact-info-grid,
-        .form-grid {
+
+        .feature-grid,
+        .article-grid,
+        .insight-grid {
           grid-template-columns: 1fr;
+        }
+
+        .article-card img {
+          height: 220px;
         }
       }
     </style>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Southend Flooring",
-        "url": "https://www.southendflooring.co.uk/contact.html",
-        "telephone": "07730 034850",
-        "email": "sales@southendflooring.co.uk",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "10 Westcliff Avenue",
-          "addressLocality": "Westcliff-on-Sea",
-          "postalCode": "SS0 7QR",
-          "addressRegion": "Essex",
-          "addressCountry": "GB"
+        "@type": "Blog",
+        "name": "Southend Flooring Blog",
+        "url": "https://www.southendflooring.co.uk/blog/",
+        "description": "Flooring advice and buying guides from Southend Flooring.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Southend Flooring",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.southendflooring.co.uk/img/logo.webp"
+          }
         },
-        "sameAs": [
-          "https://www.facebook.com/profile.php?id=61581000873423",
-          "https://www.instagram.com/southendflooringltd/"
+        "blogPost": [
+          {
+            "@type": "BlogPosting",
+            "headline": "Best Flooring for Busy Family Homes in Southend",
+            "url": "https://www.southendflooring.co.uk/blog/best-flooring-for-busy-family-homes-southend.html",
+            "datePublished": "2026-03-26",
+            "dateModified": "2026-03-26"
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "How to Choose the Right Carpet for Stairs, Landings and Bedrooms",
+            "url": "https://www.southendflooring.co.uk/blog/how-to-choose-the-right-carpet-for-stairs-landings-and-bedrooms.html",
+            "datePublished": "2026-03-26",
+            "dateModified": "2026-03-26"
+          }
         ]
       }
     </script>
@@ -622,7 +603,7 @@
   <body>
     <header class="site-header" id="siteHeader">
       <div class="container nav-wrap">
-        <a class="brand" href="index.html" aria-label="Southend Flooring home">
+        <a class="brand" href="../index.html" aria-label="Southend Flooring home">
           <img
             src="https://www.southendflooring.co.uk/img/logo.webp"
             alt="Southend Flooring"
@@ -640,227 +621,188 @@
 
         <div class="nav-menu" id="navMenu">
           <nav class="nav-links" aria-label="Primary">
-            <a href="index.html">Home</a>
-            <a href="carpets.html">Carpets</a>
-            <a href="vinyl.html">Vinyl</a>
-            <a href="amtico-southend/index.html">Amtico Flooring</a>
-            <a href="laminate.html">Laminate</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="blog/index.html">Blog</a>
+            <a href="../index.html">Home</a>
+            <a href="../carpets.html">Carpets</a>
+            <a href="../vinyl.html">Vinyl</a>
+            <a href="../amtico-southend/index.html">Amtico Flooring</a>
+            <a href="../laminate.html">Laminate</a>
+            <a href="../gallery.html">Gallery</a>
+            <a href="index.html" class="active">Blog</a>
           </nav>
-          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+          <a href="../contact.html" class="btn btn-primary">Contact Us</a>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="page-hero" aria-label="Contact hero">
+      <section class="page-hero" aria-label="Southend Flooring blog hero">
         <div class="container page-hero-inner">
-          <h1>Contact Us</h1>
+          <span class="eyebrow">Southend Flooring Blog</span>
+          <h1>Flooring Advice That Helps You Choose With Confidence</h1>
           <p>
-            Book a free home visit, request a quote, or get in touch with
-            Southend Flooring for expert advice on your next flooring project.
+            Practical guides on carpets, laminate, and luxury vinyl tiles for
+            Southend homes. Read our latest advice before you book your home
+            visit or free quote.
           </p>
         </div>
       </section>
 
-      <section class="quick-cta">
+      <section class="feature-strip">
         <div class="container">
-          <div class="quick-cta-grid">
-            <div class="quick-cta-card">
-              <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
-              <h3>Book a Free Home Visit</h3>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+              <h3>Written for Local Homes</h3>
               <p>
-                Arrange a mobile showroom visit and see the right options in
-                your own home.
+                Each guide is shaped around the kinds of hallways, bedrooms,
+                kitchens, and family spaces we see across Southend-on-Sea.
               </p>
-              <a href="https://wa.me/447730034850" class="btn btn-secondary"
-                >Book on WhatsApp</a
-              >
             </div>
-            <div class="quick-cta-card">
-              <div class="icon"><i class="fa-solid fa-phone"></i></div>
-              <h3>Call Us</h3>
+            <div class="feature-card">
+              <div class="icon"><i class="fa-solid fa-layer-group"></i></div>
+              <h3>Room-by-Room Advice</h3>
               <p>
-                Speak directly with the team for advice, pricing, and
-                availability.
+                Compare carpet, laminate, and LVT by durability, comfort,
+                cleaning, and day-to-day practicality.
               </p>
-              <a href="tel:07730034850" class="btn btn-primary">07730 034850</a>
             </div>
-            <div class="quick-cta-card">
-              <div class="icon"><i class="fa-solid fa-envelope"></i></div>
-              <h3>Email Us</h3>
-              <p>Prefer email? Send us a message and we’ll get back to you.</p>
-              <a
-                href="mailto:sales@southendflooring.co.uk"
-                class="btn btn-primary"
-                >sales@southendflooring.co.uk</a
-              >
+            <div class="feature-card">
+              <div class="icon"><i class="fa-solid fa-comments"></i></div>
+              <h3>Backed by Real Fitting Experience</h3>
+              <p>
+                Need tailored guidance after reading? We can follow up with a
+                home visit, samples, and a clear recommendation.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       <section class="section">
-        <div class="container contact-layout">
-          <div class="card">
-            <h2>Mobile Showroom</h2>
+        <div class="container">
+          <div class="section-heading">
+            <h2>Latest Articles</h2>
             <p>
-              To book a free home visit from our mobile showroom or arrange a
-              home measurement, simply get in touch and we’ll help you find a
-              suitable time.
+              Two useful starting points if you are comparing flooring options
+              for busy homes, stairs, landings, and bedrooms.
             </p>
-            <a href="https://wa.me/447730034850" class="btn btn-secondary"
-              >Book via WhatsApp</a
-            >
-
-            <div class="showroom-image">
-              <img
-                src="https://www.southendflooring.co.uk/img/mobile-carpet-showroom.webp"
-                alt="Southend Flooring mobile showroom"
-              />
-            </div>
           </div>
 
-          <div class="card">
-            <h2>Get in touch</h2>
-
-            <div class="contact-info-grid">
-              <div class="contact-info-item">
-                <i class="fa-solid fa-phone"></i>
-                <h3>Telephone</h3>
-                <p><a href="tel:07730034850">07730 034850</a></p>
-              </div>
-              <div class="contact-info-item">
-                <i class="fa-solid fa-envelope"></i>
-                <h3>Email</h3>
+          <div class="article-grid">
+            <article class="article-card">
+              <img
+                src="https://www.southendflooring.co.uk/img/vinyl-lvt-southend.jpg"
+                alt="Luxury vinyl flooring in a busy family home"
+              />
+              <div class="article-card-body">
+                <span class="article-kicker">Buying Guide</span>
+                <h3>Best Flooring for Busy Family Homes in Southend</h3>
+                <div class="article-meta">
+                  <span><i class="fa-regular fa-calendar"></i>26 March 2026</span>
+                  <span><i class="fa-regular fa-clock"></i>6 min read</span>
+                </div>
                 <p>
-                  <a href="mailto:sales@southendflooring.co.uk"
-                    >sales@southendflooring.co.uk</a
-                  >
+                  Compare LVT, laminate, and carpet by room so you can choose
+                  practical flooring for hallways, kitchens, living spaces, and
+                  bedrooms without guesswork.
                 </p>
+                <a
+                  href="best-flooring-for-busy-family-homes-southend.html"
+                  class="btn btn-primary"
+                  >Read Article</a
+                >
               </div>
-            </div>
+            </article>
 
-            <h3 style="margin-bottom: 1rem">Send a message</h3>
-
-            <!-- QUICK OPTION:
-               Replace YOUR_FORM_ENDPOINT with your Formspree endpoint
-               Example: https://formspree.io/f/xxxxabcd
-          -->
-            <form action="YOUR_FORM_ENDPOINT" method="POST">
-              <div class="form-grid">
-                <div class="form-group">
-                  <label for="name">Your Name</label>
-                  <input type="text" id="name" name="name" required />
+            <article class="article-card">
+              <img
+                src="https://www.southendflooring.co.uk/img/carousel-carpets.jpg"
+                alt="Carpet fitted on stairs and landing"
+              />
+              <div class="article-card-body">
+                <span class="article-kicker">Carpet Advice</span>
+                <h3>How to Choose the Right Carpet for Stairs, Landings and Bedrooms</h3>
+                <div class="article-meta">
+                  <span><i class="fa-regular fa-calendar"></i>26 March 2026</span>
+                  <span><i class="fa-regular fa-clock"></i>5 min read</span>
                 </div>
-
-                <div class="form-group">
-                  <label for="email">Your Email</label>
-                  <input type="email" id="email" name="email" required />
-                </div>
-
-                <div class="form-group">
-                  <label for="phone">Your Phone</label>
-                  <input type="tel" id="phone" name="phone" />
-                </div>
-
-                <div class="form-group full">
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" required></textarea>
-                </div>
-
-                <!-- Optional spam protection -->
-                <input type="text" name="_gotcha" style="display: none" />
-
-                <!-- Optional subject for services like Formspree -->
-                <input
-                  type="hidden"
-                  name="_subject"
-                  value="New enquiry from Southend Flooring website"
-                />
-
-                <!-- Optional redirect after success -->
-                <!-- <input type="hidden" name="_next" value="https://www.southendflooring.co.uk/thank-you.html"> -->
+                <p>
+                  Learn how pile height, fibre choice, colour, and underlay
+                  affect comfort, wear, and appearance in the hardest-working
+                  carpeted areas of the home.
+                </p>
+                <a
+                  href="how-to-choose-the-right-carpet-for-stairs-landings-and-bedrooms.html"
+                  class="btn btn-primary"
+                  >Read Article</a
+                >
               </div>
-
-              <p class="form-note">
-                Your details remain confidential. Add your privacy page here:
-                <a href="privacy.html"><strong>Privacy Policy</strong></a>
-              </p>
-
-              <div class="form-actions">
-                <button type="submit" class="btn btn-primary">
-                  Send Message
-                </button>
-              </div>
-            </form>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="section testimonial-wrap">
+      <section class="section insight-wrap">
         <div class="container">
           <div class="section-heading">
-            <h2>Customer Reviews</h2>
+            <h2>Browse by Flooring Type</h2>
             <p>
-              A few kind words from clients we’ve worked with across Southend
-              and beyond.
+              Need product pages as well as advice? Explore our core flooring
+              services and then get in touch for a quote.
             </p>
           </div>
 
-          <div class="testimonial-grid">
-            <article class="testimonial-card">
-              <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+          <div class="insight-grid">
+            <article class="insight-card">
+              <h3>Carpets</h3>
               <p>
-                I would recommend them highly, a good bunch of people and they
-                worked tirelessly.
+                Soft, warm, and ideal for bedrooms, stairs, and landings when
+                the right pile and underlay are chosen.
               </p>
-              <div>
-                <h4>Teresa Ward</h4>
-                <p>Boreham House</p>
-              </div>
-              <div class="stars">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i>
-              </div>
+              <a href="../carpets.html" class="btn btn-primary">View Carpets</a>
             </article>
 
-            <article class="testimonial-card">
-              <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+            <article class="insight-card">
+              <h3>Luxury Vinyl Tiles</h3>
               <p>
-                Job completed on time, within budget and to a high standard. I’d
-                be more than happy to use again and recommend to others.
+                A strong choice for kitchens, hallways, and family spaces where
+                moisture resistance and easy cleaning matter.
               </p>
-              <div>
-                <h4>Kean Folley</h4>
-                <p>Bank of Scotland</p>
-              </div>
-              <div class="stars">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i>
-              </div>
+              <a href="../vinyl.html" class="btn btn-primary">View Vinyl</a>
             </article>
 
-            <article class="testimonial-card">
-              <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+            <article class="insight-card">
+              <h3>Laminate Flooring</h3>
               <p>
-                Excellent service from James and Tony. They finished the job
-                early to a very high spec. Very happy customers, highly
-                recommend.
+                Durable, stylish, and cost-effective for living rooms, home
+                offices, and bedrooms with the right subfloor preparation.
               </p>
-              <div>
-                <h4>Darren</h4>
-                <p>Colchester</p>
-              </div>
-              <div class="stars">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i>
-              </div>
+              <a href="../laminate.html" class="btn btn-primary"
+                >View Laminate</a
+              >
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="final-cta">
+            <div>
+              <h3>Need a recommendation for your home?</h3>
+              <p>
+                Read the guides, then speak to Southend Flooring for practical
+                advice, samples, and a free quotation.
+              </p>
+            </div>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap">
+              <a href="https://wa.me/447730034850" class="btn btn-secondary"
+                >WhatsApp Us</a
+              >
+              <a href="../contact.html" class="btn btn-primary"
+                >Book a Home Visit</a
+              >
+            </div>
           </div>
         </div>
       </section>
